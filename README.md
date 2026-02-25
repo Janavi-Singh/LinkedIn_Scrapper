@@ -1,7 +1,5 @@
 # 🕵️‍♂️ LinkedIn Profile Scraper (Serper API)
 
-```markdown
-
 ## 📌 Overview
 This Python script automates the process of discovering highly relevant LinkedIn profile URLs using Google Search via the Serper.dev API. 
 
