@@ -1,19 +1,18 @@
-
-
-```markdown
 # 🕵️‍♂️ LinkedIn Profile Scraper (Serper API)
 
+```markdown
+
 ## 📌 Overview
-This Python script automates the process of discovering highly relevant LinkedIn profile URLs using Google Search via the **Serper.dev API**. 
+This Python script automates the process of discovering highly relevant LinkedIn profile URLs using Google Search via the Serper.dev API. 
 
 Instead of searching directly on LinkedIn (which can lead to account restrictions), this tool acts as a "White Hat" scraper. It reads a list of target companies, job titles, and locations, paginates through multiple pages of Google results, smartly filters out irrelevant profiles (like ex-employees), and exports a clean CSV of targeted leads.
 
 ## ✨ Key Features
-* **Deep Pagination:** Automatically fetches multiple pages of Google results (default: 5 pages / 50 profiles per query) to maximize lead volume.
-* **Smart Filtering:** Automatically excludes directories and ex-employees by scanning snippets for negative keywords (`ex-`, `former`, `past`, `previously`, etc.).
-* **Company Match Verification:** Ensures the target company is actually mentioned in the search title or snippet before saving.
-* **Auto-Parsing:** Cleans and splits the Google Search title to extract the lead's Name, Current Job Title, and Current Company.
-* **De-duplication:** Automatically removes duplicate URLs before exporting to keep your data clean.
+* Deep Pagination: Automatically fetches multiple pages of Google results (default: 5 pages / 50 profiles per query) to maximize lead volume.
+* Smart Filtering: Automatically excludes directories and ex-employees by scanning snippets for negative keywords (`ex-`, `former`, `past`, `previously`, etc.).
+* Company Match Verification: Ensures the target company is actually mentioned in the search title or snippet before saving.
+* Auto-Parsing: Cleans and splits the Google Search title to extract the lead's Name, Current Job Title, and Current Company.
+* De-duplication: Automatically removes duplicate URLs before exporting to keep your data clean.
 
 ## 🛠️ Prerequisites
 * Python 3.7+ installed on your machine.
