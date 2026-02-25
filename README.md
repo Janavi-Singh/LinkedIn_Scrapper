@@ -71,13 +71,10 @@ The script will generate a file named `step1_urls_scaled3.csv`. The output will 
 **Output Table Format (`step1_urls_scaled3.csv`)**
 | Input Company | Input Job Title | Input Location | Name | Found Company | Found Job Title | LinkedIn URL |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Google | Software Engineer | Bengaluru | Janavi Singh | Google | Software Engineer | https://www.google.com/search?q=https://linkedin.com/in/janavisingh... |
-| Amazon | Product Manager | Hyderabad | John Doe | Amazon | Product Manager | https://www.google.com/search?q=https://linkedin.com/in/johndoe... |
+| Google | Software Engineer | Bengaluru | Janavi Singh | Google | Software Engineer |https://linkedin.com/in/janavisingh... |
+| Amazon | Product Manager | Hyderabad | John Doe | Amazon | Product Manager | https://linkedin.com/in/johndoe... |
 
 ## ⚠️ Important Notes
 
 * **Regional Targeting:** The script uses `"gl": "in"` in the API payload. This forces Google to return results localized to **India**. If you are searching for leads in other countries, you should change this to `"us"`, `"uk"`, or remove the `"gl"` parameter entirely.
 * **Rate Limits:** The script includes a `time.sleep(1.5)` pause between page fetches to respect API rate limits and avoid connection errors.
-
-```
-
